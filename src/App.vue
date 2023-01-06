@@ -1,15 +1,19 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <NavBar class="ltm-navbar"/>
+
+  <div class="ltm-content">
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus tenetur, consequuntur placeat eos possimus illo quisquam eius corrupti esse recusandae consequatur autem quis. Magnam voluptatem laudantium ratione quaerat, officia animi!</p> 
+  </div>
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import NavBar from './components/NavBar.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    NavBar
   }
 }
 </script>
@@ -21,6 +25,15 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+.ltm-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.ltm-content {
+  /*scroll-margin-top: 10rem; todo not sure how this works*/
+  margin-top: 100px;
 }
 </style>
