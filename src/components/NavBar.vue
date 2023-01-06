@@ -48,6 +48,10 @@
   <style scoped>
     .navbar{
       font-family: 'Yeseva One', cursive;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     }
     .nav-item {
         font-size: 24px;
