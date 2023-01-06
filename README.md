@@ -1,5 +1,9 @@
 # vue-portfolio
 
+This is a personal portfolio website for Liam McConlogue. It was built in VueJs and is hosted on github pages.
+
+[View deployment here]()
+
 ## Project setup
 ```
 npm install
