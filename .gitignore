@@ -1,7 +1,8 @@
 .DS_Store
 node_modules
 /dist
-
+deployment-info.md
+design
 
 # local env files
 .env.local
