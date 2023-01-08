@@ -3,7 +3,14 @@
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container-fluid">
             <!--Left Name Text-->
-            <a class="navbar-brand fs-2" href="#">Liam</a>
+            <a class="navbar-brand fs-2 ms-3" href="#">
+                Liam
+                <!--Show 'McConlogue' when navbar collapses -->
+                <span class="d-md-none">McConlogue</span> 
+                <!--Show 'McConlogue' only when navbar expands bigger than 'lg' breakpoint-->
+                <span class="d-none d-lg-inline">McConlogue</span> 
+            </a>
+            
             
             <!--Toggle button-->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
