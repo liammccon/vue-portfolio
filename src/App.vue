@@ -40,6 +40,7 @@ export default {
 .ltm-content {
   /*scroll-margin-top: 10rem; todo not sure how this works*/
   padding-top: 100px;
+  font-family: 'Josefin Sans';
 }
 .ltm-logo{
   width: 150px;
