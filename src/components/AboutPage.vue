@@ -1,4 +1,5 @@
 <template>
+    <img src="./../assets/headshot-horn.jpeg" class="d-lg-none img-fluid ltm-photo-big" alt="Holding my horn"/>
     <div class="container-fluid ps-sm-2 pe-sm-2 ps-lg-4">
         <div class="row mt-lg-4">
             <div class="col-lg-8 text-start pt-lg-3">
@@ -36,5 +37,9 @@ export default {
 .ltm-photo-1 {
     min-width: 300px;
     max-height: 550px !important;
+}
+.ltm-photo-big {
+    margin-top: -150px; /*Goes under the navbar*/
+    margin-bottom: 20px;
 }
 </style>
