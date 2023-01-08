@@ -4,15 +4,6 @@
   <div class="ltm-content container-fluid bg-black text-light">
     <AboutPage/>
     <img src="./assets/liam-logo-1.svg" class="ltm-logo" alt="French horn logo"/>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus tenetur, consequuntur placeat eos possimus illo quisquam eius corrupti esse recusandae consequatur autem quis. Magnam voluptatem laudantium ratione quaerat, officia animi!</p> 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates maxime rerum beatae debitis. Nesciunt temporibus expedita doloribus esse blanditiis beatae, provident, commodi, veritatis modi voluptatum debitis sapiente. Consequatur, ea atque!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus tenetur, consequuntur placeat eos possimus illo quisquam eius corrupti esse recusandae consequatur autem quis. Magnam voluptatem laudantium ratione quaerat, officia animi!</p> 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates maxime rerum beatae debitis. Nesciunt temporibus expedita doloribus esse blanditiis beatae, provident, commodi, veritatis modi voluptatum debitis sapiente. Consequatur, ea atque!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus tenetur, consequuntur placeat eos possimus illo quisquam eius corrupti esse recusandae consequatur autem quis. Magnam voluptatem laudantium ratione quaerat, officia animi!</p> 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates maxime rerum beatae debitis. Nesciunt temporibus expedita doloribus esse blanditiis beatae, provident, commodi, veritatis modi voluptatum debitis sapiente. Consequatur, ea atque!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus tenetur, consequuntur placeat eos possimus illo quisquam eius corrupti esse recusandae consequatur autem quis. Magnam voluptatem laudantium ratione quaerat, officia animi!</p> 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates maxime rerum beatae debitis. Nesciunt temporibus expedita doloribus esse blanditiis beatae, provident, commodi, veritatis modi voluptatum debitis sapiente. Consequatur, ea atque!</p>
-
   </div>
 
 </template>
@@ -40,6 +31,7 @@ export default {
 .ltm-content {
   /*scroll-margin-top: 10rem; todo not sure how this works*/
   padding-top: 100px;
+  min-height: 100%;
   font-family: 'Josefin Sans';
 }
 .ltm-logo{
