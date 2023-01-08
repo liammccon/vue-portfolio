@@ -64,4 +64,6 @@
         font-size: 24px;
         margin-right: 6px;
     }
+
+    
   </style>
