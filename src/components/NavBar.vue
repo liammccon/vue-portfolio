@@ -4,7 +4,7 @@
         <div class="container-fluid">
             
             <!--Left Name Text-->
-            <a class="navbar-brand fs-2 ms-3" href="#">
+            <a class="navbar-brand fs-2 ms-3" href="Home">
                 <img src="./../assets/liam-logo-small.svg" class="ltm-logo" alt="French horn logo"/>
                 <span class="navbar-brand-text">
                     Liam
@@ -28,22 +28,22 @@
                     
                     <!--Links-->
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">About</a>
+                        <a class="nav-link active" aria-current="page" href="About">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Coding</a>
+                        <a class="nav-link" href="Coding">Coding</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Music</a>
+                        <a class="nav-link" href="Music">Music</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Media</a>
+                        <a class="nav-link" href="Media">Media</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Calendar</a>
+                        <a class="nav-link" href="Calendar">Calendar</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Fun</a>
+                        <a class="nav-link" href="Fun">Fun</a>
                     </li>
                 </ul>
             </div>
