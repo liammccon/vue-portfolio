@@ -5,8 +5,8 @@
             
             <!--Left Name Text-->
             <a class="navbar-brand fs-2 ms-3" href="Home">
-                <img src="./../assets/liam-logo-small.svg" class="ltm-logo" alt="French horn logo"/>
-                <span class="navbar-brand-text">
+                <img src="./../assets/liam-logo-small.svg" class="ltm-logo d-none d-sm-inline" alt="French horn logo"/>
+                <span class="navbar-brand-text ps-sm-5">
                     Liam
                     <!--Show 'McConlogue' when navbar collapses -->
                     <span class="d-md-none">McConlogue</span> 
@@ -88,7 +88,9 @@
 
 
     .navbar-brand-text {
+        /*
         padding-left: 50px;
+        */
     }
     
   </style>
