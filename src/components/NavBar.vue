@@ -79,15 +79,16 @@
         position: relative; /*For the logo to be absolute*/
     }
     .ltm-logo {
-        margin-top: -12px;
+        position: absolute;
+        margin-top: -10px;
         left: 0;
         width: 100px;
-        height: 65px;
+        height: 60px;
     }
 
 
     .navbar-brand-text {
-        padding-left: 0px;
+        padding-left: 50px;
     }
     
   </style>
