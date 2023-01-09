@@ -4,17 +4,17 @@
     <div class="container-fluid ps-xs-1 pe-xs-1 ps-md-4 pt-3 pt-lg-5">
         <div class="row mt-lg-4">
             <div class="col-lg-8 text-start pt-lg-3">
-                <h1 class="text-center">Hi, I'm Liam!</h1> 
-                <h3 class="mt-2">I am a musician and programmer, finishing my undergrad with a major in music and a minor in computer science.</h3>
+                <h1 class="text-center pb-1 border-dark border-bottom">About me</h1> 
+                <h3 class="mt-3">I am a musician and programmer, finishing my undergrad with a major in music and a minor in computer science.</h3>
                 
                 <div class="fs-5 mt-2">
-                    <p>I go to the Cleveland Insitute of Music and Case Western Reserve University.</p>
-                    <p>I'm a freelance french hornist in the Cleveland area and have played with orchestras in Canton, Akron, Mansfield, and Firelands.
+                    <p>I am in my last semester at the Cleveland Insitute of Music and Case Western Reserve University.</p>
+                    <p>I'm a freelance french hornist in the Cleveland area and have played with orchestras in the greater Cleveland area such as Canton, Akron, Mansfield, and Firelands.
                     I have also played with the grammy-winning Cleveland Chamber Symphony. 
                     </p>
                     <p>My coding interests are in software and in web development (you're looking at a website I made right now!). 
-                    I am familiar with Java, JavaScript, HTML, CSS, Python, and more. In fall 2022, I worked as a Teacher's Assistant at CWRU to teach 
-                    Java and software principals to undergraduate students.
+                    I have experience in Java, JavaScript, HTML, CSS, Python, and more. In fall 2022, I worked as a Teacher's Assistant at CWRU to teach 
+                    Java and software principals to undergraduate students. 
                     </p>
                 </div>
                 
@@ -42,4 +42,5 @@ export default {
 .ltm-photo-big {
     margin-bottom: 20px;
 }
+
 </style>
