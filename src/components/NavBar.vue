@@ -26,10 +26,13 @@
                     
                     <!--Links-->
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="About">About</a>
+                        <router-link to="/" class="nav-link active">About</router-link>
+                        <!--
+                            <a class="nav-link active" aria-current="page" href="About">About</a>
+                        -->
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Coding">Coding</a>
+                        <router-link to="/coding" class="nav-link">Coding</router-link>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Music">Music</a>

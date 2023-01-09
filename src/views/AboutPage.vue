@@ -34,6 +34,8 @@
                 </div>
             </div>
         
+
+            <img src="./../assets/liam-logo-small.svg" class="ltm-logo" alt="French horn logo"/>
         </div>
 
     </div>
