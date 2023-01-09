@@ -1,6 +1,7 @@
 <template>
     <img src="./../assets/headshot-horn.jpeg" class="d-lg-none img-fluid ltm-photo-big" alt="Holding my horn"/>
-    <div class="container-fluid ps-sm-2 pe-sm-2 ps-lg-4">
+    <!--Main Container - sets padding 'start' and top (ps, pt) for different sizes (sm, lg)-->
+    <div class="container-fluid ps-xs-1 pe-xs-1 ps-md-4 pt-3 pt-lg-5">
         <div class="row mt-lg-4">
             <div class="col-lg-8 text-start pt-lg-3">
                 <h1 class="text-center">Hi, I'm Liam!</h1> 
@@ -39,7 +40,6 @@ export default {
     max-height: 550px !important;
 }
 .ltm-photo-big {
-    margin-top: -150px; /*Goes under the navbar*/
     margin-bottom: 20px;
 }
 </style>

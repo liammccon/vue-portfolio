@@ -1,6 +1,6 @@
 <template>
     <!--Navbar-->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <nav id="ltm-navbar" class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container-fluid">
             <!--Left Name Text-->
             <a class="navbar-brand fs-2 ms-3" href="#">
@@ -49,12 +49,17 @@
   <script>
   export default {
     name: 'NavBar',
+    data () {
+      return {
+        
+      }
+    },
   }
   </script>
   
   <style scoped>
     .navbar{
-      font-family: 'Yeseva One', cursive;
+    font-family: 'Yeseva One', cursive;
     position: fixed;
     top: 0;
     left: 0;

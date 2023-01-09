@@ -1,10 +1,13 @@
 <template>
-  <NavBar class="ltm-navbar"/>
+  <div class="ltm-root">
+    <NavBar ref="navbar"/>
 
-  <div class="ltm-content container-fluid bg-black text-light">
-    <AboutPage/>
-    <img src="./assets/liam-logo-1.svg" class="ltm-logo" alt="French horn logo"/>
+    <div id="ltm-content" class="container-fluid bg-black text-light">
+      <AboutPage/>
+      <img src="./assets/liam-logo-1.svg" class="ltm-logo" alt="French horn logo"/>
+    </div>
   </div>
+  
 
 </template>
 
@@ -16,7 +19,16 @@ export default {
   name: 'App',
   components: {
     NavBar, AboutPage
+  }, 
+  data() {
+    return {
+
+    }
+  },
+  methods: {
+
   }
+  
 }
 </script>
 
@@ -28,9 +40,9 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
-.ltm-content {
+#ltm-content {
   /*scroll-margin-top: 10rem; todo not sure how this works*/
-  padding-top: 100px;
+  padding-top: 50px;
   min-height: 100%;
   font-family: 'Josefin Sans';
 }
