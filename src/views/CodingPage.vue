@@ -15,6 +15,9 @@
                     <li class="nav-item">
                         <a href="#projects">Projects</a>
                     </li>
+                    <li class="nav-item">
+                        <a href="#experience">Experience</a>
+                    </li>
                 </ul>
             </div>
             
@@ -25,7 +28,15 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quia non placeat impedit fugit saepe nisi numquam quibusdam pariatur, laborum dolorem tenetur reiciendis qui blanditiis incidunt, earum sunt excepturi similique expedita eaque dolorum! Nostrum consequatur voluptatem, odit ratione nihil aut doloribus dolor exercitationem tempora ab placeat culpa explicabo ea nulla.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quia non placeat impedit fugit saepe nisi numquam quibusdam pariatur, laborum dolorem tenetur reiciendis qui blanditiis incidunt, earum sunt excepturi similique expedita eaque dolorum! Nostrum consequatur voluptatem, odit ratione nihil aut doloribus dolor exercitationem tempora ab placeat culpa explicabo ea nulla.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quia non placeat impedit fugit saepe nisi numquam quibusdam pariatur, laborum dolorem tenetur reiciendis qui blanditiis incidunt, earum sunt excepturi similique expedita eaque dolorum! Nostrum consequatur voluptatem, odit ratione nihil aut doloribus dolor exercitationem tempora ab placeat culpa explicabo ea nulla.</p>
-                <h1 id="skills">Skills, Technologies</h1>
+                <h1 id="skills">Skills</h1>
+                <h2>Languages and Technologies</h2>
+                <h2>Other skills</h2>
+                <ul>
+                    <li>Graphic and logo design</li>
+                </ul>
+                <div class="row-cols-4">
+                    
+                </div>
                 <h1 id="projects" class="text-start">Projects</h1>
             </div>
         </div>
@@ -39,11 +50,16 @@ import DisplayHeading from '@/components/DisplayHeading.vue';
     export default {
         data(){
             return {
-                items: [
-                    {text: 'About', link: 'about'},
-                    {text: 'Skills', link: 'kills'},
-                    {text: 'Projects', link: 'projects'},
-                    {text: 'Education', link: 'education'},
+                skills: [
+                    {text: 'Java', img: 'java.svg'},
+                    {text: 'HTML5', img: 'html.svg'},
+                    {text: 'CSS', img: 'css.svg'},
+                    {text: 'JavaScript', img: 'javascript.svg'},
+                    {text: 'VueJs', img: 'vuejs.svg'},
+                    {text: 'Bootstrap', img: 'bootstrap.svg'},
+                    {text: 'Python', img:'python.svg'},
+                    {text: 'Git', img:'git.svg'},
+                    {text: 'GitHub', img:'github.svg'}
                 ]
             }
         },
