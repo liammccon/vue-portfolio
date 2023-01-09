@@ -2,13 +2,18 @@
     <!--Navbar-->
     <nav id="ltm-navbar" class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container-fluid">
+            
             <!--Left Name Text-->
             <a class="navbar-brand fs-2 ms-3" href="#">
-                Liam
-                <!--Show 'McConlogue' when navbar collapses -->
-                <span class="d-md-none">McConlogue</span> 
-                <!--Show 'McConlogue' only when navbar expands bigger than 'lg' breakpoint-->
-                <span class="d-none d-lg-inline">McConlogue</span> 
+                <img src="./../assets/liam-logo-small.svg" class="ltm-logo" alt="French horn logo"/>
+                <span class="navbar-brand-text">
+                    Liam
+                    <!--Show 'McConlogue' when navbar collapses -->
+                    <span class="d-md-none">McConlogue</span> 
+                    <!--Show 'McConlogue' only when navbar expands bigger than 'lg' breakpoint-->
+                    <span class="d-none d-lg-inline">McConlogue</span> 
+                </span>
+                
             </a>
             
             
@@ -51,7 +56,7 @@
     name: 'NavBar',
     data () {
       return {
-        
+
       }
     },
   }
@@ -69,6 +74,20 @@
         font-size: 24px;
         margin-right: 6px;
     }
+    
+    .container-fluid {
+        position: relative; /*For the logo to be absolute*/
+    }
+    .ltm-logo {
+        margin-top: -12px;
+        left: 0;
+        width: 100px;
+        height: 65px;
+    }
 
+
+    .navbar-brand-text {
+        padding-left: 0px;
+    }
     
   </style>

@@ -4,7 +4,7 @@
 
     <div id="ltm-content" class="container-fluid bg-black text-light">
       <AboutPage/>
-      <img src="./assets/liam-logo-1.svg" class="ltm-logo" alt="French horn logo"/>
+      <img src="./assets/liam-logo-small.svg" class="ltm-logo" alt="French horn logo"/>
     </div>
   </div>
   
