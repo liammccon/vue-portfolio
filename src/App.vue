@@ -1,36 +1,10 @@
 <template>
-  <div class="ltm-root">
-    <NavBar ref="navbar"/>
-
-    <div id="ltm-content" class="container-fluid bg-black text-light">
-      <AboutPage/>
-      <img src="./assets/liam-logo-small.svg" class="ltm-logo" alt="French horn logo"/>
-    </div>
-  </div>
-  
-
+  <nav>
+    <router-link to="/">Home</router-link> |
+    <router-link to="/about">About</router-link>
+  </nav>
+  <router-view/>
 </template>
-
-<script>
-import NavBar from './components/NavBar.vue'
-import AboutPage from './components/AboutPage.vue'
-
-export default {
-  name: 'App',
-  components: {
-    NavBar, AboutPage
-  }, 
-  data() {
-    return {
-
-    }
-  },
-  methods: {
-
-  }
-  
-}
-</script>
 
 <style>
 #app {
@@ -39,14 +13,18 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}./views/AboutPage.vue
+
+nav {
+  padding: 30px;
 }
-#ltm-content {
-  /*scroll-margin-top: 10rem; todo not sure how this works*/
-  padding-top: 50px;
-  min-height: 100%;
-  font-family: 'Josefin Sans';
+
+nav a {
+  font-weight: bold;
+  color: #2c3e50;
 }
-.ltm-logo{
-  width: 150px;
+
+nav a.router-link-exact-active {
+  color: #42b983;
 }
 </style>
