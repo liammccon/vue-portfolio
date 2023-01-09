@@ -48,14 +48,11 @@ export default {
   width: 150px;
 }
 
-/* DeleteMe! The navigation router link stuff
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
+.ltm-text-yellow, .ltm-page-link {
+    color: rgb(217, 188, 70) !important;
 }
 
-nav a.router-link-exact-active {
-  color: #42b983;
+.ltm-border-bottom {
+    border-bottom: 1px solid rgb(217, 188, 70) !important;
 }
-*/
 </style>

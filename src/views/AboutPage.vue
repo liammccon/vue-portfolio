@@ -58,12 +58,5 @@ export default {
 .ltm-photo-big {
     margin-bottom: 20px;
 }
-.ltm-text-yellow, .ltm-page-link {
-    color: rgb(217, 188, 70) !important;
-}
-
-.ltm-border-bottom {
-    border-bottom: 1px solid rgb(217, 188, 70) !important;
-}
 
 </style>
