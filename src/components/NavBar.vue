@@ -4,16 +4,14 @@
         <div class="container-fluid">
             
             <!--Name Text-->
-            <a class="navbar-brand fs-2 ms-3" href="About">
+            <router-link to="/" class="navbar-brand fs-2 ms-3">
                 <!--Logo only visible on 'sm' screens and up('d-none d-sm-inline') -->
                 <img src="./../assets/liam-logo-small.svg" class="ltm-logo d-none d-sm-inline" alt="French horn logo"/>
                 <!--Left padding for the name only on 'sm' screens and up ('ps-sm-5')-->
                 <span class="navbar-brand-text ps-sm-5">
                     Liam McConlogue
                 </span>
-                
-            </a>
-            
+            </router-link>
             
             <!--Toggle button-->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,13 +24,10 @@
                     
                     <!--Links-->
                     <li class="nav-item">
-                        <router-link to="/" class="nav-link active">About</router-link>
-                        <!--
-                            <a class="nav-link active" aria-current="page" href="About">About</a>
-                        -->
+                        <router-link to="/" :class="{active: currentRoute==='/'}" class="nav-link">About</router-link>
                     </li>
                     <li class="nav-item">
-                        <router-link to="/coding" class="nav-link">Coding</router-link>
+                        <router-link to="/coding" :class="{active: currentRoute==='/coding'}" class="nav-link">Coding</router-link>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Music">Music</a>
@@ -57,9 +52,23 @@
     name: 'NavBar',
     data () {
       return {
-
+        currentRoute: '/'
       }
     },
+    methods: {
+        /**
+         * Updates the currentRoute field
+         */
+        updateCurrentRoute(){
+            console.log(this.$route.path)
+            this.currentRoute = this.$route.path
+        }
+    },
+    watch: {
+        $route(to, from) {
+            this.updateCurrentRoute()
+        }
+    }
   }
   </script>
   
