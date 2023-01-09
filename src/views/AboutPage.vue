@@ -8,7 +8,7 @@
                 <div class="col-lg-8 text-start pt-lg-3">
                     <h1 class="text-center display-1 ltm-text-yellow pb-1 ltm-border-bottom">About me</h1> 
                     <!--TODO-->
-                    <p class="h3 mt-3 pb-1 text-center ltm-border-bottom">I am a musician and programmer, finishing my undergrad with a major in music and a minor in computer science.</p>
+                    <p class="h3 mt-3 pb-1 text-center ltm-border-bottom">I am a musician and programmer, finishing my undergrad with a major in french horn and a minor in computer science.</p>
                     
                     <div class="fs-5 mt-3">
                         <p>I am in my last semester at the Cleveland Insitute of Music and Case Western Reserve University.</p>
