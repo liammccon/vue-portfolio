@@ -5,9 +5,9 @@
             
             <!--Name Text-->
             <a class="navbar-brand fs-2 ms-3" href="About">
-                <!--On 'sm' screens, logo disapears ('d-none d-sm-inline') -->
+                <!--Logo only visible on 'sm' screens and up('d-none d-sm-inline') -->
                 <img src="./../assets/liam-logo-small.svg" class="ltm-logo d-none d-sm-inline" alt="French horn logo"/>
-                <!--And padding is removed from the name ('ps-sm-5')-->
+                <!--Left padding for the name only on 'sm' screens and up ('ps-sm-5')-->
                 <span class="navbar-brand-text ps-sm-5">
                     Liam McConlogue
                 </span>
@@ -84,11 +84,8 @@
         height: 60px;
     }
 
-
-    .navbar-brand-text {
-        /*
-        padding-left: 50px;
-        */
+    .active {
+        color: rgb(217, 188, 70) !important;
     }
     
   </style>

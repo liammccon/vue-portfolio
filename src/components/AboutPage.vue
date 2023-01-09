@@ -4,9 +4,9 @@
     <div class="container-fluid ps-xs-1 pe-xs-1 ps-md-4 pt-3 pt-lg-5">
         <div class="row mt-lg-4">
             <div class="col-lg-8 text-start pt-lg-3">
-                <h1 class="text-center display-1 pb-1 border-dark border-bottom">About me</h1> 
+                <h1 class="text-center display-1 ltm-text-yellow pb-1 ltm-border-bottom">About me</h1> 
                 <!--TODO-->
-                <p class="h3 mt-3 pb-1 text-center border-dark border-bottom">I am a musician and programmer, finishing my undergrad with a major in music and a minor in computer science.</p>
+                <p class="h3 mt-3 pb-1 text-center ltm-border-bottom">I am a musician and programmer, finishing my undergrad with a major in music and a minor in computer science.</p>
                 
                 <div class="fs-5 mt-3">
                     <p>I am in my last semester at the Cleveland Insitute of Music and Case Western Reserve University.</p>
@@ -16,6 +16,12 @@
                     <p>My coding interests are in software and in web development (you're looking at a website I made right now!). 
                     I have experience in Java, JavaScript, HTML, CSS, Python, and more. In fall 2022, I worked as a Teacher's Assistant at CWRU to teach 
                     Java and software principals to undergraduate students. 
+                    </p>
+                    <h3>Navigating this site:</h3>
+                    <p>Go to <a href="Coding" class="ltm-page-link">Coding</a> to see my portfolio and some of my projects
+                        <br/>To <a href="Music" class="ltm-page-link">Music</a> to see recordings of some of my performances
+                        <br/> To <a href="Calendar" class="ltm-page-link">Calendar</a> to see my upcoming performances
+                        <br/>And to <a href="Fun" class="ltm-page-link">Fun</a> to see some of my other interests and thoughts.
                     </p>
                     
                 </div>
@@ -43,6 +49,13 @@ export default {
 }
 .ltm-photo-big {
     margin-bottom: 20px;
+}
+.ltm-text-yellow, .ltm-page-link {
+    color: rgb(217, 188, 70) !important;
+}
+
+.ltm-border-bottom {
+    border-bottom: 1px solid rgb(217, 188, 70) !important;
 }
 
 </style>
