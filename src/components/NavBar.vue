@@ -1,17 +1,15 @@
 <template>
     <!--Navbar-->
-    <nav id="ltm-navbar" class="navbar navbar-expand-md navbar-dark bg-dark">
+    <nav id="ltm-navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             
-            <!--Left Name Text-->
-            <a class="navbar-brand fs-2 ms-3" href="Home">
+            <!--Name Text-->
+            <a class="navbar-brand fs-2 ms-3" href="About">
+                <!--On 'sm' screens, logo disapears ('d-none d-sm-inline') -->
                 <img src="./../assets/liam-logo-small.svg" class="ltm-logo d-none d-sm-inline" alt="French horn logo"/>
+                <!--And padding is removed from the name ('ps-sm-5')-->
                 <span class="navbar-brand-text ps-sm-5">
-                    Liam
-                    <!--Show 'McConlogue' when navbar collapses -->
-                    <span class="d-md-none">McConlogue</span> 
-                    <!--Show 'McConlogue' only when navbar expands bigger than 'lg' breakpoint-->
-                    <span class="d-none d-lg-inline">McConlogue</span> 
+                    Liam McConlogue
                 </span>
                 
             </a>
