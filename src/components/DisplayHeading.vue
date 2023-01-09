@@ -1,7 +1,7 @@
 <template>
   <div class="ltm-heading">
     <!--Add the display-size and borderbottom as classes -->
-    <div :class="['display-'+size, borderBottom? 'ltm-border-bottom': '', 'ltm-text-yellow' ]">
+    <div :class="['display-'+size, borderBottom? 'ltm-border-bottom': '', 'ltm-text-yellow', 'text-center' ]">
         {{text}}
     </div>
   </div>

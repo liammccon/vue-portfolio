@@ -19,12 +19,7 @@
                         I have experience in Java, JavaScript, HTML, CSS, Python, and more. In fall 2022, I worked as a Teacher's Assistant at CWRU to teach 
                         Java and software principals to undergraduate students. 
                         </p>
-                        <h3>Navigating this site:</h3>
-                        <p>Go to <a href="Coding" class="ltm-page-link">Coding</a> to see my portfolio and some of my projects
-                            <br/>To <a href="Music" class="ltm-page-link">Music</a> to see recordings of some of my performances
-                            <br/> To <a href="Calendar" class="ltm-page-link">Calendar</a> to see my upcoming performances
-                            <br/>And to <a href="Fun" class="ltm-page-link">Fun</a> to see some of my other interests and thoughts.
-                        </p>
+                        
                         
                     </div>
                     
@@ -34,6 +29,12 @@
                 </div>
             </div>
         
+            <h3>Navigating this site:</h3>
+            <p>Go to <a href="Coding" class="ltm-page-link">Coding</a> to see my portfolio and some of my projects
+                <br/>To <a href="Music" class="ltm-page-link">Music</a> to see recordings of some of my performances
+                <br/> To <a href="Calendar" class="ltm-page-link">Calendar</a> to see my upcoming performances
+                <br/>And to <a href="Fun" class="ltm-page-link">Fun</a> to see some of my other interests and thoughts.
+            </p>
 
             <img src="./../assets/liam-logo-small.svg" class="ltm-logo" alt="French horn logo"/>
         </div>

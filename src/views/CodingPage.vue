@@ -1,6 +1,6 @@
 <template>
-    <div class="coding pt-5">
-        <DisplayHeading text="Coding"/>
+    <div class="coding pt-5 mt-2">
+        <DisplayHeading text="Coding" :borderBottom="false"/>
     </div>
 </template>
 
