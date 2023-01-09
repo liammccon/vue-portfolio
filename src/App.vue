@@ -12,12 +12,11 @@
 
 <script>
 import NavBar from './components/NavBar.vue'
-import AboutPage from './views/AboutPage.vue'
 
 export default {
   name: 'App',
   components: {
-    NavBar, AboutPage
+    NavBar
   }, 
   data() {
     return {
