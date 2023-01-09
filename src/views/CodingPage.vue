@@ -3,9 +3,9 @@
 
         <!--Row for navigation and content-->
         <div class="row">
-            <!--Navigation row-->
-            <div class="col-sm-2 d-none d-sm-block">
-                <ul class="sticky-top ltm-coding-nav text-start">
+            <!--Sticky Top Navigation row - is hidden on screens less than small-->
+            <div class="col-sm-3 ps-sm-5">
+                <ul class="sticky-sm-top ltm-coding-nav text-start">
                     <li class="nav-item">
                         <a href="#about">About</a>
                     </li>
@@ -13,33 +13,20 @@
                         <a href="#skills">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#Projects">Projects</a>
+                        <a href="#projects">Projects</a>
                     </li>
                 </ul>
             </div>
             
-            <!--Content-->
-            <div class="col-sm-10 ltm-coding-content">
+            <!--Content. Has a left padding on small or larger screens-->
+            <div class="col-sm-9 ltm-coding-content ps-sm-5 text-start">
                 <DisplayHeading text="Coding" :borderBottom="false" data-toc-skip/>
-                <h1 id="about">About</h1>
-                <p>lorem</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
-                <h1>MORE</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+                <h1 id="about" class="text-start">About</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quia non placeat impedit fugit saepe nisi numquam quibusdam pariatur, laborum dolorem tenetur reiciendis qui blanditiis incidunt, earum sunt excepturi similique expedita eaque dolorum! Nostrum consequatur voluptatem, odit ratione nihil aut doloribus dolor exercitationem tempora ab placeat culpa explicabo ea nulla.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quia non placeat impedit fugit saepe nisi numquam quibusdam pariatur, laborum dolorem tenetur reiciendis qui blanditiis incidunt, earum sunt excepturi similique expedita eaque dolorum! Nostrum consequatur voluptatem, odit ratione nihil aut doloribus dolor exercitationem tempora ab placeat culpa explicabo ea nulla.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quia non placeat impedit fugit saepe nisi numquam quibusdam pariatur, laborum dolorem tenetur reiciendis qui blanditiis incidunt, earum sunt excepturi similique expedita eaque dolorum! Nostrum consequatur voluptatem, odit ratione nihil aut doloribus dolor exercitationem tempora ab placeat culpa explicabo ea nulla.</p>
+                <h1 id="skills">Skills, Technologies</h1>
+                <h1 id="projects" class="text-start">Projects</h1>
             </div>
         </div>
         
@@ -68,7 +55,7 @@ import DisplayHeading from '@/components/DisplayHeading.vue';
 
 <style scoped>
 .ltm-coding-nav {
-    top: 80px;
+    top: 100px;
 }
 .ltm-coding-content {
     overflow: auto !important;
