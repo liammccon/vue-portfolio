@@ -7,16 +7,16 @@
             <div class="col-sm-3 ps-sm-5">
                 <ul class="sticky-sm-top ltm-coding-nav text-start">
                     <li class="nav-item">
-                        <a href="#about">About</a>
+                        <a href="#about" class="ltm-nav-link" >About</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#skills">Skills</a>
+                        <a href="#skills" class="ltm-nav-link" >Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#projects">Projects</a>
+                        <a href="#projects" class="ltm-nav-link" >Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#experience">Experience</a>
+                        <a href="#experience" class="ltm-nav-link" >Experience</a>
                     </li>
                 </ul>
             </div>
@@ -37,7 +37,7 @@
                         <div class="card bg-transparent text-bg-dark ltm-skill-card">
                             <img :src="skill.img" class="card-img-top h-75" :alt="skill.text+'Logo'">
                                 <div class="card-body">
-                                    <p class="card-text text-center">{{skill.text}}</p>
+                                    <p class="card-text text-center text-nowrap">{{skill.text}}</p>
                                 </div>
                             </div>
                     </div>
@@ -48,9 +48,10 @@
                     <li>Graphic and logo design</li>
                 </ul>
                 
+                <!--Projects!-->
                 <h1 id="projects" class="text-start ltm-border-bottom">Projects</h1>
 
-                <div class="card text-bg-dark">
+                <div class="card text-bg-dark border-light">
                     <div class="row">
                         <div class="col-md-7">
                             <div class="card-body">
@@ -60,11 +61,16 @@
                                 <p><a>View github repo</a></p>
                             </div>
                         </div>
-                        <div class="col-md-5">
-                            
+                        <div class="col-md-5 ltm-zoom-parent">
+                            <img src="@/assets/projects/word-mash-lg.png" alt="Word Mash Web Game" class="img-fluid ltm-img-zoom"/>
                         </div>
                     </div>
                 </div>
+
+
+                <!--Experience and Education-->
+                <h1 class="text-start ltm-border-bottom">Experience, Education</h1>
+
             </div>
         </div>
         
@@ -90,7 +96,7 @@ import DisplayHeading from '@/components/DisplayHeading.vue';
                     {text: 'Git', img:require('@/assets/skills/git.svg')},
                     {text: 'GitHub', img:require('@/assets/skills/github.svg')},
                     {text: 'VS Code', img:require('@/assets/skills/vs-code.svg')},
-                    {text: 'Android App Dev.', img:require('@/assets/skills/android.svg')},
+                    {text: 'Android', img:require('@/assets/skills/android.svg')},
                 ]
             }
         },
@@ -98,10 +104,7 @@ import DisplayHeading from '@/components/DisplayHeading.vue';
             DisplayHeading
         },
         methods: {
-            getImgUrl(pic) {
-                let images = require.context('../assets/skills', false, /\.svg$/)
-                return images('./' + pic)   
-            }
+
         }
     }
 </script>
@@ -116,12 +119,12 @@ import DisplayHeading from '@/components/DisplayHeading.vue';
 ul {
   list-style-type: none;
 }
-a {
+.ltm-nav-link {
     font-size: 18px;
     text-decoration: none;
     color: rgb(168, 168, 168) !important;
 }
-a:hover {
+.ltm-nav-link:hover {
     color: rgb(217, 188, 70) !important;
 }
 
@@ -131,7 +134,28 @@ a:hover {
     padding: 10px 0px 10px 0px;
     margin-top: 10px;
 }
-.card:hover{
-    /*TODO*/
+.ltm-skill-card {
+    transition: transform .2s;
 }
+.ltm-skill-card:hover{
+    transform: scale(1.15);
+}
+
+
+/*For image zoom on Projects*/
+.ltm-zoom-parent {
+    overflow: hidden;
+}
+.ltm-img-zoom {
+    min-width: 100%;
+    min-height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+    border-right: 1px solid white;
+    transition: 0.5s all ease-in-out;
+}
+.ltm-img-zoom:hover {
+    transform: scale(1.2);
+}
+
 </style>
