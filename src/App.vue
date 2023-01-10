@@ -1,6 +1,6 @@
 <template>
   <div class="ltm-root">
-    <NavBar ref="navbar"/>
+    <NavBar ref="navbar" id="ltm-navbar"/>
 
     <div id="ltm-content" class="container-fluid bg-black text-light">
       <router-view/> 
@@ -37,7 +37,12 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-}/*./views/AboutPage.vue this is included by default by the router but seems unnecessary*/
+}
+
+#ltm-navbar{
+  z-index: 1;
+}
+
 #ltm-content {
   /*scroll-margin-top: 10rem; todo not sure how this works*/
   padding-top: 50px;
