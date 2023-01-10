@@ -49,25 +49,31 @@
                 </ul>
                 
                 <!--Projects!-->
-                <h1 id="projects" class="text-start ltm-border-bottom">Projects</h1>
+                <h1 id="projects" class="text-start ltm-border-bottom mb-3">Projects</h1>
 
-                <div class="card text-bg-dark border-light">
+                <div class="card text-bg-dark border-light mb-2">
                     <div class="row">
                         <div class="col-md-7">
                             <div class="card-body">
-                                <h5 class="card-title">"Word Mash" Game</h5>
+                                <h5 class="card-title fs-3">"Word Mash" Game</h5>
                                 <p class="card-text">This desktop web game tests your memory, typing speed, and spelling.</p>
-                                <p class="card-text"><small class="text-muted">Made with: HTML, JavaScript, CSS, Vue, Bootstrap, JQuery</small></p>
-                                <p><a>View github repo</a></p>
+                                <p class="card-text"><small class="">Made with: HTML, JavaScript, CSS, Vue, Bootstrap, and JQuery</small></p>
+                                <p><a href="https://github.com/liammccon/memory-typing-game" target="_blank" class="ltm-text-yellow ">See on GitHub</a>
+                                <br/><a href="https://github.com/liammccon/memory-typing-game" target="_blank" class="ltm-text-yellow ">Try it</a></p>
+
                             </div>
                         </div>
                         <div class="col-md-5">
                             <div class="ltm-hover-zoom">
-                                <img src="@/assets/projects/word-mash-lg.png" alt="Word Mash Web Game" class="img-fluid"/>
+                                <a href="https://liammccon.github.io/memory-typing-game/" target="_blank">
+                                    <img src="@/assets/projects/word-mash-lg.png" alt="Word Mash Web Game" class="img-fluid"/>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
+
+
 
 
                 <!--Experience and Education-->
@@ -136,6 +142,8 @@ ul {
     padding: 10px 0px 10px 0px;
     margin-top: 10px;
 }
+
+/* For skill card Zoom */
 .ltm-skill-card {
     transition: transform .2s;
 }
@@ -147,16 +155,26 @@ ul {
 .ltm-hover-zoom {
     border-radius: 5px;
     overflow: hidden;
+    height: 100%;
 }
 .ltm-hover-zoom img {
     min-width: 100%;
     min-height: 100%;
+    max-height: 12rem;
     border-radius: 5px;
     object-fit: cover;
     transition: 0.3s all ease-in-out;
 }
 .ltm-hover-zoom:hover img {
     transform: scale(1.15);
+}
+
+.card-body p {
+    margin-bottom: 8px;
+}
+
+a {
+    text-decoration: none;
 }
 
 </style>
