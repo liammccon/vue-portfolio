@@ -61,8 +61,10 @@
                                 <p><a>View github repo</a></p>
                             </div>
                         </div>
-                        <div class="col-md-5 ltm-zoom-parent">
-                            <img src="@/assets/projects/word-mash-lg.png" alt="Word Mash Web Game" class="img-fluid ltm-img-zoom"/>
+                        <div class="col-md-5">
+                            <div class="ltm-hover-zoom">
+                                <img src="@/assets/projects/word-mash-lg.png" alt="Word Mash Web Game" class="img-fluid"/>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -141,21 +143,20 @@ ul {
     transform: scale(1.15);
 }
 
-
 /*For image zoom on Projects*/
-.ltm-zoom-parent {
+.ltm-hover-zoom {
+    border-radius: 5px;
     overflow: hidden;
 }
-.ltm-img-zoom {
+.ltm-hover-zoom img {
     min-width: 100%;
     min-height: 100%;
     border-radius: 5px;
     object-fit: cover;
-    border-right: 1px solid white;
-    transition: 0.5s all ease-in-out;
+    transition: 0.3s all ease-in-out;
 }
-.ltm-img-zoom:hover {
-    transform: scale(1.2);
+.ltm-hover-zoom:hover img {
+    transform: scale(1.15);
 }
 
 </style>
