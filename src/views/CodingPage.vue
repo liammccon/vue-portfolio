@@ -43,16 +43,21 @@
                     </div>
                 </div>
 
-                <h3 class="mt-3">Other skills</h3>
+                <h3 class="mt-5">Design skills</h3>
                 <ul>
-                    <li>Graphic and logo design</li>
+                    <li>Graphic design</li>
+                    <li>UI design</li>
+                    <li>Logo design</li>
+                    <h5><a href="https://photos.app.goo.gl/bqEytiELpsBCf9Wy8" class="ltm-text-yellow">View some examples here</a></h5>
+
                 </ul>
+
                 
                 <!--Projects!-->
-                <h1 id="projects" class="text-start ltm-border-bottom mb-3">Projects</h1>
+                <h1 id="projects" class="text-start ltm-border-bottom mt-4 mb-4">Projects</h1>
 
                 <!--Project cards-->
-                <div v-for="project in projects" class="card text-bg-dark border-light mb-2">
+                <div v-for="project in projects" class="card text-bg-dark border-light mb-3">
                     <div class="row">
                         <div class="col-md-7">
                             <div class="card-body">
@@ -80,7 +85,7 @@
 
 
                 <!--Experience and Education-->
-                <h1 class="text-start ltm-border-bottom">Experience, Education</h1>
+                <h1 class="text-start ltm-border-bottom mt-5">Experience, Education</h1>
 
             </div>
         </div>
@@ -112,7 +117,7 @@ import DisplayHeading from '@/components/DisplayHeading.vue';
                 projects: [
                     {
                         title: 'This website - Portfolio', 
-                        description: 'A portfolio websote that demonstrates responsive front-end development and UI/UX design.',
+                        description: 'A portfolio websote that demonstrates responsive front-end development, logo design, and UI/UX design.',
                         skills: 'HTML, JavaScript, CSS, Vue, Bootstrap, JQuery',
                         img: require('@/assets/projects/portfolio.png'),
                         github: 'https://github.com/liammccon/vue-portfolio',
