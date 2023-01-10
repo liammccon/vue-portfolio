@@ -110,14 +110,14 @@ import DisplayHeading from '@/components/DisplayHeading.vue';
                     {text: 'Android', img:require('@/assets/skills/android.svg')},
                 ],
                 projects: [
-                    /*{
-                        title: 'This website!', 
-                        description: 'This site is my portfolio and demonstrates my front-end development skills, as well as UI/UX design.',
+                    {
+                        title: 'This website - Portfolio', 
+                        description: 'A portfolio websote that demonstrates responsive front-end development and UI/UX design.',
                         skills: 'HTML, JavaScript, CSS, Vue, Bootstrap, JQuery',
-                        img: require('@/assets/projects/'),
-                        github: '',
-                        deployment: ''
-                    },*/
+                        img: require('@/assets/projects/portfolio.png'),
+                        github: 'https://github.com/liammccon/vue-portfolio',
+                        deployment: 'https://liammccon.github.io/vue-portfolio'
+                    },
                     {
                         title: 'Word Mash Game', 
                         description: 'This desktop web game tests your memory, typing speed, and spelling.',
@@ -125,6 +125,14 @@ import DisplayHeading from '@/components/DisplayHeading.vue';
                         img: require('@/assets/projects/word-mash-lg.png'),
                         github: 'https://github.com/liammccon/memory-typing-game',
                         deployment: 'https://liammccon.github.io/memory-typing-game/'
+                    },
+                    {
+                        title: 'Task Manager', 
+                        description: 'Add, update, and delete tasks with this task manager built with Material Design UI. Includes form entry and validation.',
+                        skills: 'HTML, JavaScript, CSS, Vue, Material Design, Bootstrap, JQuery, Moment.js, Toastr.js',
+                        img: require('@/assets/projects/task-manager.png'),
+                        github: 'https://github.com/liammccon/task-manager',
+                        deployment: 'https://liammccon.github.io/task-manager'
                     },
                     /* Template
                     {
