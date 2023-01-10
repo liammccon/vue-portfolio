@@ -1,7 +1,7 @@
 <template>
     <div class="about">
 
-        <img src="./../assets/headshot-horn.jpeg" class="d-lg-none img-fluid ltm-photo-big" alt="Holding my horn"/>
+        <img src="./../assets/headshot-horn-compressed.jpeg" class="d-lg-none img-fluid ltm-photo-big" alt="Holding my horn"/>
         <!--Main Container - sets padding 'start' and top (ps, pt) for different sizes (sm, lg)-->
         <div class="container-fluid ps-xs-1 pe-xs-1 ps-md-4 pt-3 pt-lg-5">
             <div class="row mt-lg-4">
