@@ -32,27 +32,19 @@
                 <h2>Languages and Technologies</h2>
 
                 <div class="row row-cols-auto">
+                    <div v-for="skill in skills" class="col">
+                        <div class="card bg-transparent text-bg-dark">
+                            <img :src="'./../assets/skills/'+skill.img" class="card-img-top h-75" :alt="skill.name+'Logo'">
+                                <div class="card-body">
+                                    <p class="card-text text-center">{{skill.name}}</p>
+                                </div>
+                            </div>
+                    </div>
                     <div class="col">
                         <div class="card bg-transparent text-bg-dark">
                             <img src="./../assets/skills/java.svg" class="card-img-top h-75" alt="Java Logo">
                                 <div class="card-body">
                                     <p class="card-text text-center">Java</p>
-                                </div>
-                            </div>
-                    </div>
-                    <div class="col">
-                        <div class="card bg-transparent text-bg-dark">
-                            <img src="./../assets/skills/github.svg" class="card-img-top h-75" alt="Java Logo">
-                                <div class="card-body">
-                                    <p class="card-text text-center">GitHub</p>
-                                </div>
-                            </div>
-                    </div>
-                    <div class="col">
-                        <div class="card bg-transparent text-bg-dark">
-                            <img src="./../assets/skills/css.svg" class="card-img-top h-75" alt="Java Logo">
-                                <div class="card-body">
-                                    <p class="card-text text-center">CSS</p>
                                 </div>
                             </div>
                     </div>
