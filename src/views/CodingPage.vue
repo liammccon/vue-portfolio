@@ -30,13 +30,41 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quia non placeat impedit fugit saepe nisi numquam quibusdam pariatur, laborum dolorem tenetur reiciendis qui blanditiis incidunt, earum sunt excepturi similique expedita eaque dolorum! Nostrum consequatur voluptatem, odit ratione nihil aut doloribus dolor exercitationem tempora ab placeat culpa explicabo ea nulla.</p>
                 <h1 id="skills">Skills</h1>
                 <h2>Languages and Technologies</h2>
+
+                <div class="row row-cols-auto">
+                    <div class="col">
+                        <div class="card bg-transparent text-bg-dark">
+                            <img src="./../assets/skills/java.svg" class="card-img-top h-75" alt="Java Logo">
+                                <div class="card-body">
+                                    <p class="card-text text-center">Java</p>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col">
+                        <div class="card bg-transparent text-bg-dark">
+                            <img src="./../assets/skills/github.svg" class="card-img-top h-75" alt="Java Logo">
+                                <div class="card-body">
+                                    <p class="card-text text-center">GitHub</p>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col">
+                        <div class="card bg-transparent text-bg-dark">
+                            <img src="./../assets/skills/css.svg" class="card-img-top h-75" alt="Java Logo">
+                                <div class="card-body">
+                                    <p class="card-text text-center">CSS</p>
+                                </div>
+                            </div>
+                    </div>
+
+                </div>
+                
+
                 <h2>Other skills</h2>
                 <ul>
                     <li>Graphic and logo design</li>
                 </ul>
-                <div class="row-cols-4">
-                    
-                </div>
+                
                 <h1 id="projects" class="text-start">Projects</h1>
             </div>
         </div>
@@ -86,5 +114,15 @@ a {
 }
 a:hover {
     color: rgb(217, 188, 70) !important;
+}
+
+.card {
+    height: 150px;
+    width: 150px;
+    padding: 10px 0px 10px 0px;
+    margin-top: 10px;
+}
+.card:hover{
+    /*TODO*/
 }
 </style>
