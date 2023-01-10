@@ -34,21 +34,12 @@
                 <div class="row row-cols-auto">
                     <div v-for="skill in skills" class="col">
                         <div class="card bg-transparent text-bg-dark">
-                            <img :src="'./../assets/skills/'+skill.img" class="card-img-top h-75" :alt="skill.name+'Logo'">
+                            <img :src="skill.img" class="card-img-top h-75" :alt="skill.text+'Logo'">
                                 <div class="card-body">
-                                    <p class="card-text text-center">{{skill.name}}</p>
+                                    <p class="card-text text-center">{{skill.text}}</p>
                                 </div>
                             </div>
                     </div>
-                    <div class="col">
-                        <div class="card bg-transparent text-bg-dark">
-                            <img src="./../assets/skills/java.svg" class="card-img-top h-75" alt="Java Logo">
-                                <div class="card-body">
-                                    <p class="card-text text-center">Java</p>
-                                </div>
-                            </div>
-                    </div>
-
                 </div>
                 
 
@@ -71,20 +62,26 @@ import DisplayHeading from '@/components/DisplayHeading.vue';
         data(){
             return {
                 skills: [
-                    {text: 'Java', img: 'java.svg'},
-                    {text: 'HTML5', img: 'html.svg'},
-                    {text: 'CSS', img: 'css.svg'},
-                    {text: 'JavaScript', img: 'javascript.svg'},
-                    {text: 'VueJs', img: 'vuejs.svg'},
-                    {text: 'Bootstrap', img: 'bootstrap.svg'},
-                    {text: 'Python', img:'python.svg'},
-                    {text: 'Git', img:'git.svg'},
-                    {text: 'GitHub', img:'github.svg'}
+                    {text: 'Java', img: require('@/assets/skills/java.svg')},
+                    {text: 'HTML5', img: require('@/assets/skills/html5.svg')},
+                    {text: 'CSS', img: require('@/assets/skills/css.svg')},
+                    {text: 'JavaScript', img: require('@/assets/skills/javascript.svg')},
+                    {text: 'VueJs', img: require('@/assets/skills/vuejs.svg')},
+                    {text: 'Bootstrap', img: require('@/assets/skills/bootstrap.svg')},
+                    {text: 'Python', img:require('@/assets/skills/python.svg')},
+                    {text: 'Git', img:require('@/assets/skills/git.svg')},
+                    {text: 'GitHub', img:require('@/assets/skills/github.svg')}
                 ]
             }
         },
         components: {
             DisplayHeading
+        },
+        methods: {
+            getImgUrl(pic) {
+                let images = require.context('../assets/skills', false, /\.svg$/)
+                return images('./' + pic)   
+            }
         }
     }
 </script>
