@@ -48,7 +48,7 @@
                     <li>Graphic design</li>
                     <li>UI design</li>
                     <li>Logo design</li>
-                    <h5><a href="https://photos.app.goo.gl/bqEytiELpsBCf9Wy8" class="ltm-text-yellow">View some examples here</a></h5>
+                    <h5><a href="https://photos.app.goo.gl/bqEytiELpsBCf9Wy8" class="ltm-text-yellow" target="_blank">View some examples here</a></h5>
 
                 </ul>
 
