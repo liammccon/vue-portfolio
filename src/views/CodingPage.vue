@@ -51,27 +51,30 @@
                 <!--Projects!-->
                 <h1 id="projects" class="text-start ltm-border-bottom mb-3">Projects</h1>
 
-                <div class="card text-bg-dark border-light mb-2">
+                <!--Project cards-->
+                <div v-for="project in projects" class="card text-bg-dark border-light mb-2">
                     <div class="row">
                         <div class="col-md-7">
                             <div class="card-body">
-                                <h5 class="card-title fs-3">"Word Mash" Game</h5>
-                                <p class="card-text">This desktop web game tests your memory, typing speed, and spelling.</p>
-                                <p class="card-text"><small class="">Made with: HTML, JavaScript, CSS, Vue, Bootstrap, and JQuery</small></p>
-                                <p><a href="https://github.com/liammccon/memory-typing-game" target="_blank" class="ltm-text-yellow ">See on GitHub</a>
-                                <br/><a href="https://github.com/liammccon/memory-typing-game" target="_blank" class="ltm-text-yellow ">Try it</a></p>
+                                <h5 class="card-title fs-3">{{project.title}}</h5>
+                                <p class="card-text">{{project.description}}</p>
+                                <p class="card-text"><small class="">Made with: {{ project.skills }}</small></p>
+                                <p><a :href="project.github" target="_blank" class="ltm-text-yellow ">See on GitHub</a>
+                                <br/><a :href="project.deployment" target="_blank" class="ltm-text-yellow ">Try it</a></p>
 
                             </div>
                         </div>
                         <div class="col-md-5">
                             <div class="ltm-hover-zoom">
-                                <a href="https://liammccon.github.io/memory-typing-game/" target="_blank">
-                                    <img src="@/assets/projects/word-mash-lg.png" alt="Word Mash Web Game" class="img-fluid"/>
+                                <a :href="project.deployment" target="_blank">
+                                    <img :src="project.img" alt="{{project.title}}" class="img-fluid"/>
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                
 
 
 
@@ -105,6 +108,34 @@ import DisplayHeading from '@/components/DisplayHeading.vue';
                     {text: 'GitHub', img:require('@/assets/skills/github.svg')},
                     {text: 'VS Code', img:require('@/assets/skills/vs-code.svg')},
                     {text: 'Android', img:require('@/assets/skills/android.svg')},
+                ],
+                projects: [
+                    /*{
+                        title: 'This website!', 
+                        description: 'This site is my portfolio and demonstrates my front-end development skills, as well as UI/UX design.',
+                        skills: 'HTML, JavaScript, CSS, Vue, Bootstrap, JQuery',
+                        img: require('@/assets/projects/'),
+                        github: '',
+                        deployment: ''
+                    },*/
+                    {
+                        title: 'Word Mash Game', 
+                        description: 'This desktop web game tests your memory, typing speed, and spelling.',
+                        skills: 'HTML, JavaScript, CSS, Vue, Bootstrap, JQuery',
+                        img: require('@/assets/projects/word-mash-lg.png'),
+                        github: 'https://github.com/liammccon/memory-typing-game',
+                        deployment: 'https://liammccon.github.io/memory-typing-game/'
+                    },
+                    /* Template
+                    {
+                        title: '', 
+                        description: '',
+                        skills: '',
+                        img: require('@/assets/projects/'),
+                        github: '',
+                        deployment: ''
+                    },
+                    */
                 ]
             }
         },
