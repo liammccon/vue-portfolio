@@ -28,12 +28,13 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quia non placeat impedit fugit saepe nisi numquam quibusdam pariatur, laborum dolorem tenetur reiciendis qui blanditiis incidunt, earum sunt excepturi similique expedita eaque dolorum! Nostrum consequatur voluptatem, odit ratione nihil aut doloribus dolor exercitationem tempora ab placeat culpa explicabo ea nulla.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quia non placeat impedit fugit saepe nisi numquam quibusdam pariatur, laborum dolorem tenetur reiciendis qui blanditiis incidunt, earum sunt excepturi similique expedita eaque dolorum! Nostrum consequatur voluptatem, odit ratione nihil aut doloribus dolor exercitationem tempora ab placeat culpa explicabo ea nulla.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quia non placeat impedit fugit saepe nisi numquam quibusdam pariatur, laborum dolorem tenetur reiciendis qui blanditiis incidunt, earum sunt excepturi similique expedita eaque dolorum! Nostrum consequatur voluptatem, odit ratione nihil aut doloribus dolor exercitationem tempora ab placeat culpa explicabo ea nulla.</p>
-                <h1 id="skills">Skills</h1>
-                <h2>Languages and Technologies</h2>
+                <h1 id="skills" class="ltm-border-bottom">Skills</h1>
+                <h3 class="mt-3">Languages and Technologies</h3>
 
+                <!--Skills cards: images and descriptions-->
                 <div class="row row-cols-auto">
                     <div v-for="skill in skills" class="col">
-                        <div class="card bg-transparent text-bg-dark">
+                        <div class="card bg-transparent text-bg-dark ltm-skill-card">
                             <img :src="skill.img" class="card-img-top h-75" :alt="skill.text+'Logo'">
                                 <div class="card-body">
                                     <p class="card-text text-center">{{skill.text}}</p>
@@ -41,14 +42,29 @@
                             </div>
                     </div>
                 </div>
-                
 
-                <h2>Other skills</h2>
+                <h3 class="mt-3">Other skills</h3>
                 <ul>
                     <li>Graphic and logo design</li>
                 </ul>
                 
-                <h1 id="projects" class="text-start">Projects</h1>
+                <h1 id="projects" class="text-start ltm-border-bottom">Projects</h1>
+
+                <div class="card text-bg-dark">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="card-body">
+                                <h5 class="card-title">"Word Mash" Game</h5>
+                                <p class="card-text">This desktop web game tests your memory, typing speed, and spelling.</p>
+                                <p class="card-text"><small class="text-muted">Made with: HTML, JavaScript, CSS, Vue, Bootstrap, JQuery</small></p>
+                                <p><a>View github repo</a></p>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         
@@ -62,6 +78,8 @@ import DisplayHeading from '@/components/DisplayHeading.vue';
         data(){
             return {
                 skills: [
+                    //Required for dynamic rendering of images in Vue
+                    //Images from https://vecta.io/symbols/25/web-technologies 
                     {text: 'Java', img: require('@/assets/skills/java.svg')},
                     {text: 'HTML5', img: require('@/assets/skills/html5.svg')},
                     {text: 'CSS', img: require('@/assets/skills/css.svg')},
@@ -70,7 +88,9 @@ import DisplayHeading from '@/components/DisplayHeading.vue';
                     {text: 'Bootstrap', img: require('@/assets/skills/bootstrap.svg')},
                     {text: 'Python', img:require('@/assets/skills/python.svg')},
                     {text: 'Git', img:require('@/assets/skills/git.svg')},
-                    {text: 'GitHub', img:require('@/assets/skills/github.svg')}
+                    {text: 'GitHub', img:require('@/assets/skills/github.svg')},
+                    {text: 'VS Code', img:require('@/assets/skills/vs-code.svg')},
+                    {text: 'Android App Dev.', img:require('@/assets/skills/android.svg')},
                 ]
             }
         },
@@ -105,9 +125,9 @@ a:hover {
     color: rgb(217, 188, 70) !important;
 }
 
-.card {
-    height: 150px;
-    width: 150px;
+.ltm-skill-card {
+    height: 100px;
+    width: 100px;
     padding: 10px 0px 10px 0px;
     margin-top: 10px;
 }
