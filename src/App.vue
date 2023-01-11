@@ -2,7 +2,7 @@
   <div class="ltm-root">
     <NavBar ref="navbar" id="ltm-navbar"/>
 
-    <div id="ltm-content" class="container-fluid bg-black text-light">
+    <div id="ltm-content" class="container-fluid text-light">
       <router-view/> 
     </div>
   </div>
@@ -47,6 +47,7 @@ export default {
   /*scroll-margin-top: 10rem; todo not sure how this works*/
   min-height: 100%;
   font-family: 'Josefin Sans';
+  background-color: rgba(217, 188, 70, 0) !important;
 }
 .ltm-logo{
   width: 150px;
@@ -58,5 +59,9 @@ export default {
 
 .ltm-border-bottom {
     border-bottom: 1px solid rgb(217, 188, 70) !important;
+}
+.ltm-border-top {
+    border-top: 1px solid rgb(217, 188, 70) !important;
+    padding-top: 15px;
 }
 </style>
