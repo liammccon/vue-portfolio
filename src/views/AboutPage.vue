@@ -87,7 +87,13 @@ export default {
     min-width: 100vw;
     min-height: 100vh;
     background-attachment: fixed;
+}
 
+@media (max-width: 700px) {
+    .ltm-background-img {
+        /* CSS that should be displayed if width is equal to or less than 800px goes here */
+        background-image: url(./../assets/headshot-horn-centered.jpeg);
+    }
 }
 
 .ltm-gradient-down {
