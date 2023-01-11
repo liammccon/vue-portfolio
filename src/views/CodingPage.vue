@@ -98,9 +98,10 @@
 </template>
 
 <script>
-/* eslint-disable */
 import DisplayHeading from '@/components/DisplayHeading.vue';
     export default {
+
+    
         data(){
             return {
                 skills: [
