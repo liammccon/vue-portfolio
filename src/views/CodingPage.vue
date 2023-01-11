@@ -7,7 +7,7 @@
             <div class="col-sm-3 ps-sm-5">
                 <ul class="sticky-sm-top ltm-coding-nav text-start">
                     <li class="nav-item">
-                        <a href="#about" class="ltm-nav-link" >About</a>
+                        <a href="#intro" class="ltm-nav-link" >Intro</a>
                     </li>
                     <li class="nav-item">
                         <a href="#skills" class="ltm-nav-link" >Skills</a>
@@ -24,14 +24,16 @@
             <!--Content. Has a left padding on small or larger screens-->
             <div class="col-sm-9 ltm-coding-content ps-sm-5 text-start">
                 <DisplayHeading text="Coding" :borderBottom="false" data-toc-skip/>
-                <h1 id="about" class="text-start">About</h1>
+                <h1 id="intro" class="text-start">Introduction</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quia non placeat impedit fugit saepe nisi numquam quibusdam pariatur, laborum dolorem tenetur reiciendis qui blanditiis incidunt, earum sunt excepturi similique expedita eaque dolorum! Nostrum consequatur voluptatem, odit ratione nihil aut doloribus dolor exercitationem tempora ab placeat culpa explicabo ea nulla.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quia non placeat impedit fugit saepe nisi numquam quibusdam pariatur, laborum dolorem tenetur reiciendis qui blanditiis incidunt, earum sunt excepturi similique expedita eaque dolorum! Nostrum consequatur voluptatem, odit ratione nihil aut doloribus dolor exercitationem tempora ab placeat culpa explicabo ea nulla.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quia non placeat impedit fugit saepe nisi numquam quibusdam pariatur, laborum dolorem tenetur reiciendis qui blanditiis incidunt, earum sunt excepturi similique expedita eaque dolorum! Nostrum consequatur voluptatem, odit ratione nihil aut doloribus dolor exercitationem tempora ab placeat culpa explicabo ea nulla.</p>
                 <h1 id="skills" class="ltm-border-bottom">Skills</h1>
                 <h3 class="mt-3">Languages and Technologies</h3>
 
-                <!--Skills cards: images and descriptions-->
+                <!--
+                    Skills cards: images and descriptions
+                -->
                 <div class="row row-cols-auto">
                     <div v-for="skill in skills" class="col">
                         <div class="card bg-transparent text-bg-dark ltm-skill-card">
@@ -56,7 +58,7 @@
                 <!--Projects!-->
                 <h1 id="projects" class="text-start ltm-border-bottom mt-4 mb-4">Projects</h1>
 
-                <!--Project cards-->
+                <!--Project cards-
                 <div v-for="project in projects" class="card text-bg-dark border-light mb-3">
                     <div class="row">
                         <div class="col-md-7">
@@ -78,6 +80,7 @@
                         </div>
                     </div>
                 </div>
+                -->
 
                 
 
