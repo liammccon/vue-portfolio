@@ -1,14 +1,14 @@
 <template>
     <!--Navbar-->
-    <nav id="ltm-navbar" class="navbar navbar-expand-lg navbar-dark bg-transparent">
+    <nav id="ltm-navbar" class="navbar navbar-expand-md navbar-dark bg-transparent">
         <div class="container-fluid">
             
             <!--Name Text-->
             <router-link to="/" class="navbar-brand fs-2 ms-3">
                 <!--Logo only visible on 'sm' screens and up('d-none d-sm-inline') -->
-                <img src="./../assets/liam-logo-small.svg" class="ltm-logo d-none d-sm-inline" alt="French horn logo"/>
+                <img src="./../assets/liam-logo-small.svg" class="ltm-logo d-none d-sm-inline d-md-none d-lg-inline" alt="French horn logo"/>
                 <!--Left padding for the name only on 'sm' screens and up ('ps-sm-5')-->
-                <span class="navbar-brand-text ps-sm-5">
+                <span class="navbar-brand-text ps-sm-5 ps-md-0 p-lg-5">
                     Liam McConlogue
                 </span>
             </router-link>
@@ -31,9 +31,6 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Music">Music</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Media">Media</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Calendar">Calendar</a>
@@ -80,14 +77,15 @@
     left: 0;
     width: 100%;
     background-image: linear-gradient(to top, 
-  	rgba(255,0,0,0), 
-    rgba(0,0,0,.35),
-    rgba(0,0,0,.6), 
-    rgba(0,0,0,.9), 
-    rgba(0,0,0,1));
+        rgba(255,0,0,0), 
+        rgba(0,0,0,.35),
+        rgba(0,0,0,.6), 
+        rgba(0,0,0,.9), 
+        rgba(0,0,0,1));
     }
     .nav-item {
         font-size: 24px;
+        font-size-adjust:3px;
         margin-right: 6px;
     }
     
