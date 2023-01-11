@@ -1,6 +1,6 @@
 <template>
     <!--Navbar-->
-    <nav id="ltm-navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav id="ltm-navbar" class="navbar navbar-expand-lg navbar-dark bg-transparent">
         <div class="container-fluid">
             
             <!--Name Text-->
@@ -79,6 +79,12 @@
     top: 0;
     left: 0;
     width: 100%;
+    background-image: linear-gradient(to top, 
+  	rgba(255,0,0,0), 
+    rgba(0,0,0,.35),
+    rgba(0,0,0,.6), 
+    rgba(0,0,0,.9), 
+    rgba(0,0,0,1));
     }
     .nav-item {
         font-size: 24px;

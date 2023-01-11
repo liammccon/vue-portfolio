@@ -45,7 +45,6 @@ export default {
 
 #ltm-content {
   /*scroll-margin-top: 10rem; todo not sure how this works*/
-  padding-top: 50px;
   min-height: 100%;
   font-family: 'Josefin Sans';
 }
