@@ -31,9 +31,7 @@
                 <h1 id="skills" class="ltm-border-bottom">Skills</h1>
                 <h3 class="mt-3">Languages and Technologies</h3>
 
-                <!--
-                    Skills cards: images and descriptions
-                -->
+                <!--Skills cards: images and descriptions-->
                 <div class="row row-cols-auto">
                     <div v-for="skill in skills" class="col">
                         <div class="card bg-transparent text-bg-dark ltm-skill-card">
@@ -58,7 +56,7 @@
                 <!--Projects!-->
                 <h1 id="projects" class="text-start ltm-border-bottom mt-4 mb-4">Projects</h1>
 
-                <!--Project cards-
+                <!--Project cards-->
                 <div v-for="project in projects" class="card text-bg-dark border-light mb-3">
                     <div class="row">
                         <div class="col-md-7">
@@ -80,7 +78,6 @@
                         </div>
                     </div>
                 </div>
-                -->
 
                 
 
