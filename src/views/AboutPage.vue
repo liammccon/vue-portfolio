@@ -1,17 +1,18 @@
 <template>
     <div class="about">
+        <!--Background image and main container for about page-->
         <div class="ltm-background-img">
-                
-            <!--
-            <img src="./../assets/headshot-horn-compressed.jpeg" class="d-lg-none img-fluid ltm-photo-big" alt="Holding my horn"/>
-
-            -->
 
             <div class="container-fluid ltm-title">
+                <!--Arrow icon with animation-->
+                <div class="ltm-arrow">
+                    <i class="fa-solid fa-arrow-down fa-beat-fade" style="--fa-animation-duration: 1.5s; --fa-beat-fade-opacity: 0.7; --fa-beat-fade-scale: 1.3;"></i>
+                </div>
                 <h1 class="text-center display-1 ltm-text-yellow pb-1 ltm-gradient-down">About me</h1> 
             </div>
 
-            <!--Main Container - sets padding 'start' and top (ps, pt) for different sizes (sm, lg)-->
+
+            <!--Main content - sets padding 'start' and top (ps, pt) for different sizes (sm, lg)-->
             <div class="container-fluid ps-xs-1 pe-xs-1 ps-md-4 ltm-main">
 
                 <div class="row">
@@ -32,11 +33,6 @@
                         </div>
                         
                     </div>
-                    <!--
-                    <div class="col-lg-4">
-                        <img src="./../assets/horn-pic-cutout.png" class="img-fluid d-none d-lg-block ltm-photo-1" alt="Photo of me holding my horn"/>
-                    </div>
-                    -->
                     <div class="col-lg-2"></div>
                 </div>
             
@@ -71,12 +67,15 @@ export default {
     padding-top: 100vh;
 
 }
-.ltm-photo-1 {
-    min-width: 300px;
-    max-height: 550px !important;
-}
-.ltm-photo-big {
-    margin-bottom: 20px;
+.ltm-arrow  {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    right: 50%;
+    margin-top: -10vh;
+    font-size: 32px;
+    color:rgb(4, 5, 2);
+    text-shadow: rgb(255, 255, 255) 1px 0 30px;
 }
 
 .ltm-background-img {
@@ -91,7 +90,7 @@ export default {
 
 @media (max-width: 700px) {
     .ltm-background-img {
-        /* CSS that should be displayed if width is equal to or less than 800px goes here */
+        /* CSS that should be displayed if width is equal to or less than 700px goes here */
         background-image: url(./../assets/headshot-horn-centered.jpeg);
     }
 }
