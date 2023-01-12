@@ -24,11 +24,20 @@
             <!--Content. Has a left padding on small or larger screens-->
             <div class="col-sm-9 ltm-coding-content ps-sm-5 text-start mt-3 mt-sm-5">
                 <DisplayHeading text="Coding" :borderBottom="false"  data-toc-skip/>
-                <h1 id="intro" class="text-start mt-3">Introduction</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quia non placeat impedit fugit saepe nisi numquam quibusdam pariatur, laborum dolorem tenetur reiciendis qui blanditiis incidunt, earum sunt excepturi similique expedita eaque dolorum! Nostrum consequatur voluptatem, odit ratione nihil aut doloribus dolor exercitationem tempora ab placeat culpa explicabo ea nulla.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quia non placeat impedit fugit saepe nisi numquam quibusdam pariatur, laborum dolorem tenetur reiciendis qui blanditiis incidunt, earum sunt excepturi similique expedita eaque dolorum! Nostrum consequatur voluptatem, odit ratione nihil aut doloribus dolor exercitationem tempora ab placeat culpa explicabo ea nulla.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quia non placeat impedit fugit saepe nisi numquam quibusdam pariatur, laborum dolorem tenetur reiciendis qui blanditiis incidunt, earum sunt excepturi similique expedita eaque dolorum! Nostrum consequatur voluptatem, odit ratione nihil aut doloribus dolor exercitationem tempora ab placeat culpa explicabo ea nulla.</p>
+                <h1 id="intro" class="text-start mt-3 ltm-border-bottom">Introduction</h1>
                 
+                <p>Since learning to code in Python seven years ago, my passion for building applications and learning new tools has grown year after year.
+                    I now hope to use my skills to contribute to the world in meaningful ways, and would love to work in the non-profit, public, or health sectors. 
+                </p>
+                <p>Through my Computer Science Minor at CWRU, I learned to write clean, maintainable, and well tested code. 
+                    Then, I got to teach this to other students as a Teaching Assistant for the Software Craftstmanship class
+                    by providing feedback on student Java projects in discussion sections. 
+                </p>
+                <p>Recently, I have been focusing on Frontend Web Development, 
+                    having taken the Fullstack Web Development course at school and working on The Odin Project online course at home.
+                    
+                </p>
+
                 <h1 id="skills" class="mt-5 ltm-border-bottom">Skills</h1>
                 <h3 class="mt-4">Languages and Technologies</h3>
 
@@ -104,6 +113,7 @@ import DisplayHeading from '@/components/DisplayHeading.vue';
                     {text: 'HTML5', img: require('@/assets/skills/html5.svg')},
                     {text: 'CSS', img: require('@/assets/skills/css.svg')},
                     {text: 'JavaScript', img: require('@/assets/skills/javascript.svg')},
+                    {text: 'JUnit', img:require('@/assets/skills/junit.png')},
                     {text: 'VueJs', img: require('@/assets/skills/vuejs.svg')},
                     {text: 'Bootstrap', img: require('@/assets/skills/bootstrap.svg')},
                     {text: 'Python', img:require('@/assets/skills/python.svg')},
@@ -111,6 +121,7 @@ import DisplayHeading from '@/components/DisplayHeading.vue';
                     {text: 'GitHub', img:require('@/assets/skills/github.svg')},
                     {text: 'VS Code', img:require('@/assets/skills/vs-code.svg')},
                     {text: 'Android', img:require('@/assets/skills/android.svg')},
+                    
                 ],
                 projects: [
                     {
@@ -163,8 +174,14 @@ import DisplayHeading from '@/components/DisplayHeading.vue';
 .ltm-coding-nav {
     top: 100px;
 }
+
+/*For keeping the content scrolling while the sidebar is not */
 .ltm-coding-content {
     overflow: auto !important;
+}
+
+.ltm-coding-content p {
+    font-size: 20px;
 }
 ul {
   list-style-type: none;
