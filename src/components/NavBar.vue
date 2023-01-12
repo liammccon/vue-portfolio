@@ -106,7 +106,7 @@
     }
     
     /*Make a solid grey background for the expanded navbar */
-    .navbar-collapse, .show{
+    .navbar-collapse.show{
         background-image: none;
         background-color: rgb(0, 0, 0, .8)
     }

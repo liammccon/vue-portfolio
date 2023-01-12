@@ -3,9 +3,9 @@
 
         <!--Row for navigation and content-->
         <div class="row">
-            <!--Sticky Top Navigation row - is hidden on screens less than small-->
-            <div class="col-sm-3 ps-sm-5">
-                <ul class="sticky-sm-top ltm-coding-nav text-start">
+            <!--Sticky Top Navigation row - on screens below sm it is centered at the top, on sm and up it is sticky to the left top-->
+            <div class="col-sm-3 ps-sm-5 mt-3 mt-sm-5">
+                <ul class="sticky-sm-top ltm-coding-nav text-center text-sm-start">
                     <li class="nav-item">
                         <a href="#intro" class="ltm-nav-link" >Intro</a>
                     </li>
@@ -22,14 +22,15 @@
             </div>
             
             <!--Content. Has a left padding on small or larger screens-->
-            <div class="col-sm-9 ltm-coding-content ps-sm-5 text-start">
-                <DisplayHeading text="Coding" :borderBottom="false" data-toc-skip/>
-                <h1 id="intro" class="text-start">Introduction</h1>
+            <div class="col-sm-9 ltm-coding-content ps-sm-5 text-start mt-3 mt-sm-5">
+                <DisplayHeading text="Coding" :borderBottom="false"  data-toc-skip/>
+                <h1 id="intro" class="text-start mt-3">Introduction</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quia non placeat impedit fugit saepe nisi numquam quibusdam pariatur, laborum dolorem tenetur reiciendis qui blanditiis incidunt, earum sunt excepturi similique expedita eaque dolorum! Nostrum consequatur voluptatem, odit ratione nihil aut doloribus dolor exercitationem tempora ab placeat culpa explicabo ea nulla.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quia non placeat impedit fugit saepe nisi numquam quibusdam pariatur, laborum dolorem tenetur reiciendis qui blanditiis incidunt, earum sunt excepturi similique expedita eaque dolorum! Nostrum consequatur voluptatem, odit ratione nihil aut doloribus dolor exercitationem tempora ab placeat culpa explicabo ea nulla.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quia non placeat impedit fugit saepe nisi numquam quibusdam pariatur, laborum dolorem tenetur reiciendis qui blanditiis incidunt, earum sunt excepturi similique expedita eaque dolorum! Nostrum consequatur voluptatem, odit ratione nihil aut doloribus dolor exercitationem tempora ab placeat culpa explicabo ea nulla.</p>
-                <h1 id="skills" class="ltm-border-bottom">Skills</h1>
-                <h3 class="mt-3">Languages and Technologies</h3>
+                
+                <h1 id="skills" class="mt-5 ltm-border-bottom">Skills</h1>
+                <h3 class="mt-4">Languages and Technologies</h3>
 
                 <!--Skills cards: images and descriptions-->
                 <div class="row row-cols-auto">
@@ -43,7 +44,7 @@
                     </div>
                 </div>
 
-                <h3 class="mt-5">Design skills</h3>
+                <h3 class="mt-5">Design</h3>
                 <ul>
                     <li>Graphic design</li>
                     <li>UI design</li>
@@ -57,7 +58,7 @@
                 <h1 id="projects" class="text-start ltm-border-bottom mt-4 mb-4">Projects</h1>
 
                 <!--Project cards-->
-                <div v-for="project in projects" class="card text-bg-dark border-light mb-3">
+                <div v-for="project in projects" class="card text-bg-dark ltm-card-border mb-3">
                     <div class="row">
                         <div class="col-md-7">
                             <div class="card-body">
@@ -78,11 +79,6 @@
                         </div>
                     </div>
                 </div>
-
-                
-
-
-
 
                 <!--Experience and Education-->
                 <h1 class="text-start ltm-border-bottom mt-5">Experience, Education</h1>
@@ -195,6 +191,10 @@ ul {
 }
 .ltm-skill-card:hover{
     transform: scale(1.15);
+}
+
+.ltm-card-border {
+    border: 1px solid rgb(95, 83, 36)
 }
 
 /*For image zoom on Projects*/
