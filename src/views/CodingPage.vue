@@ -15,9 +15,6 @@
                     <li class="nav-item">
                         <a href="#projects" class="ltm-nav-link" >Projects</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#experience" class="ltm-nav-link" >Experience</a>
-                    </li>
                 </ul>
             </div>
             
@@ -89,9 +86,10 @@
                     </div>
                 </div>
 
-                <!--Experience and Education-->
+                <!--
+                    Experience and Education
                 <h1 class="text-start ltm-border-bottom mt-5">Experience, Education</h1>
-
+                -->
             </div>
         </div>
         

@@ -44,9 +44,26 @@
                     <div class="col-lg-2"></div>
                 </div>
             
-                
+                <div class="container-fluid text-center text-light mt-4 pb-5 ltm-social-links ltm-text-yellow">
+                    <a class="ltm-social-icon" href="#">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a class="ltm-social-icon" href="#">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a class="ltm-social-icon" href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a class="ltm-social-icon" href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
 
+                </div>
+                <!--
+                    My logo
                 <img src="./../assets/liam-logo-small.svg" class="ltm-logo" alt="French horn logo"/>
+
+                -->
             </div>
         </div>
     </div>
@@ -115,6 +132,23 @@ export default {
         display: none;
     }
 
+}
+
+.ltm-social-links {
+    font-size: 32px;
+}
+.ltm-social-icon {
+    text-decoration: none;
+    color: rgb(217, 188, 70);
+    margin: 0 10px 0 10px;
+    
+}
+.ltm-social-icon i {
+    transition: transform .2s;
+}
+.ltm-social-icon i:hover {
+    color: rgb(255, 235, 155);
+    transform: scale(1.15);
 }
 
 </style>
