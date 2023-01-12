@@ -45,8 +45,14 @@
                     <br/>And to <a href="Fun" class="ltm-page-link">Fun</a> to see some of my other interests and thoughts.
                 </p>
 
-                <img src="./../assets/liam-logo-small.svg" class="ltm-logo" alt="French horn logo"/>
-            
+                <!--
+                    My logo
+                    <img src="./../assets/liam-logo-small.svg" class="ltm-logo" alt="French horn logo"/>
+                -->
+                
+                <div class="container-fluid text-center text-light">
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
             </div>
         </div>
 
