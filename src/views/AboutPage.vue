@@ -45,16 +45,16 @@
                 </div>
             
                 <div class="container-fluid text-center text-light mt-4 pb-5 ltm-social-links ltm-text-yellow">
-                    <a class="ltm-social-icon" href="#">
+                    <a class="ltm-social-icon" href="https://www.linkedin.com/in/liam-mcconlogue-7978b21ba/" target="_blank">
                         <i class="fa-brands fa-linkedin"></i>
                     </a>
-                    <a class="ltm-social-icon" href="#">
+                    <a class="ltm-social-icon" href="https://www.youtube.com/channel/UCPKat5YvtIJ6vbCgLNObTVg" target="_blank">
                         <i class="fa-brands fa-youtube"></i>
                     </a>
-                    <a class="ltm-social-icon" href="#">
+                    <a class="ltm-social-icon" href="https://www.instagram.com/liammccon/" target="_blank">
                         <i class="fa-brands fa-instagram"></i>
                     </a>
-                    <a class="ltm-social-icon" href="#">
+                    <a class="ltm-social-icon" href="https://www.facebook.com/liammccon/" target="_blank">
                         <i class="fa-brands fa-facebook"></i>
                     </a>
 
