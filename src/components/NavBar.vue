@@ -58,7 +58,6 @@
          * Updates the currentRoute field
          */
         updateCurrentRoute(){
-            console.log(this.$route.path)
             this.currentRoute = this.$route.path
         },
     },
