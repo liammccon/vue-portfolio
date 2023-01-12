@@ -3,6 +3,7 @@
         <!--Background image and main container for about page-->
         <div class="ltm-background-img">
 
+            <img class="img-fluid ltm-mobile-img d-none" src="./../assets/headshot-horn-compressed.jpeg"/>
             <div class="container-fluid ltm-title ps-0 pe-0">
                 <!--Arrow icon with animation-->
                 <div class="ltm-arrow">
@@ -95,6 +96,27 @@ export default {
         rgba(255,0,0,0), 
         rgba(0,0,0,.5), 
         rgba(0,0,0,.8));
+}
+
+
+/*Since background does not seem to stay fixed on mobile devices*/
+@media (pointer:none), (pointer:coarse) {
+    .ltm-background-img {
+        background-image: none !important;
+    }
+
+    .ltm-mobile-img {
+        display: block !important;
+    }
+
+    .ltm-title {
+        padding-top: 0px !important;
+    }
+
+    .ltm-arrow {
+        display: none;
+    }
+
 }
 
 </style>
