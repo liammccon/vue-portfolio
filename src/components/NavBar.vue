@@ -18,8 +18,8 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             
-            <!--Collapsing Links-->
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!--Collapsing Links, will add class 'show' when expanded-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" ref="collapse">
                 <ul class="navbar-nav ms-auto mb-2 mb-sm-0 fs-2 ">
                     
                     <!--Links-->
@@ -49,7 +49,8 @@
     name: 'NavBar',
     data () {
       return {
-        currentRoute: '/'
+        currentRoute: '/',
+        navbarOpen: false
       }
     },
     methods: {
@@ -59,7 +60,7 @@
         updateCurrentRoute(){
             console.log(this.$route.path)
             this.currentRoute = this.$route.path
-        }
+        },
     },
     watch: {
         $route() {
@@ -104,4 +105,9 @@
         color: rgb(217, 188, 70) !important;
     }
     
+    /*Make a solid grey background for the expanded navbar */
+    .navbar-collapse, .show{
+        background-image: none;
+        background-color: rgb(0, 0, 0, .8)
+    }
   </style>
