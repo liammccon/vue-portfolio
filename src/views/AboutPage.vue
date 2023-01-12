@@ -3,12 +3,14 @@
         <!--Background image and main container for about page-->
         <div class="ltm-background-img">
 
-            <div class="container-fluid ltm-title">
+            <div class="container-fluid ltm-title ps-0 pe-0">
                 <!--Arrow icon with animation-->
                 <div class="ltm-arrow">
-                    <i class="fa-solid fa-arrow-down fa-beat-fade" style="--fa-animation-duration: 1.5s; --fa-beat-fade-opacity: 0.7; --fa-beat-fade-scale: 1.3;"></i>
                 </div>
-                <h1 class="text-center display-1 ltm-text-yellow pb-1 ltm-gradient-down">About me</h1> 
+                <h1 class="text-center display-1 ltm-text-yellow pb-1 ltm-gradient-down ">
+                    About me
+                    <i class="fa-solid fa-chevron-down fa-beat-fade ltm-arrow" style="--fa-animation-duration: 1.5s; --fa-beat-fade-opacity: 0.7; --fa-beat-fade-scale: 1.3;"></i>
+                </h1> 
             </div>
 
 
@@ -19,9 +21,9 @@
                     <div class="col-lg-2"></div>
                     <div class="col-lg-8 text-start pt-lg-3">
                         <!--TODO-->
-                        <p class="h3 mt-3 text-center ltm-border-bottom ltm-border-top">I am a musician and programmer, finishing my undergrad with a major in french horn and a minor in computer science.</p>
+                        <p class="h3 mt-3 text-center">I am a musician and programmer, finishing my undergrad with a major in french horn and a minor in computer science.</p>
                         
-                        <div class="fs-5 mt-4">
+                        <div class="fs-5 mt-4 ltm-border-top ltm-border-bottom">
                             <p>I am in my last semester at the Cleveland Insitute of Music and Case Western Reserve University.</p>
                             <p>I'm a freelance french hornist in the Cleveland area and have played with orchestras in the greater Cleveland area such as Canton, Akron, Mansfield, and Firelands.
                             I have also played with the grammy-winning Cleveland Chamber Symphony. 
@@ -64,18 +66,10 @@ export default {
     background-color: rgba(0,0,0,.8)
 }
 .ltm-title {
-    padding-top: 100vh;
-
+    padding-top: 88vh;
 }
 .ltm-arrow  {
-    position: absolute;
-    text-align: center;
-    left: 50%;
-    right: 50%;
-    margin-top: -10vh;
-    font-size: 32px;
-    color:rgb(4, 5, 2);
-    text-shadow: rgb(255, 255, 255) 1px 0 30px;
+    font-size: 48px;
 }
 
 .ltm-background-img {
