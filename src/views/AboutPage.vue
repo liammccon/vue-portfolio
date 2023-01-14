@@ -37,9 +37,12 @@
                         <h3 class="mt-4 text-start">Navigating this site:</h3>
                 <p class="text-start">Go to <router-link to="/coding" class="ltm-page-link ">Coding</router-link> to see my portfolio and some of my projects</p>
                 <h5>Coming soon:</h5>    
-                <p>To <a href="Music" class="ltm-page-link">Music</a> to see recordings of some of my performances
-                    <br/> To <a href="Calendar" class="ltm-page-link">Calendar</a> to see my upcoming performances
-                    <br/>And to <a href="Fun" class="ltm-page-link">Fun</a> to see some of my other interests and thoughts.
+                <p> <router-link to="/music" class="ltm-page-link ">Music</router-link> to see recordings of some of my performances
+                    <br/> And to <router-link to="/calendar" class="ltm-page-link ">Calendar</router-link> to see my upcoming performances
+                    <!--
+                        Add later
+                        <br/>And to <a href="Fun" class="ltm-page-link">Fun</a> to see some of my other interests and thoughts.
+                    -->
                 </p>
                     </div>
                     <div class="col-lg-2"></div>

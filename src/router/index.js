@@ -3,6 +3,8 @@ import { createRouter, createWebHistory } from 'vue-router'
 import AboutPage from '../views/AboutPage.vue'
 import CodingPage from '../views/CodingPage.vue'
 import MusicPage from '../views/MusicPage.vue'
+import CalendarPage from '../views/CalendarPage.vue'
+
 
 const routes = [
   {
@@ -19,6 +21,11 @@ const routes = [
     path: '/music',
     name: 'music',
     component: MusicPage
+  },
+  {
+    path: '/calendar',
+    name: 'calendar',
+    component: CalendarPage
   }
 
 

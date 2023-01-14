@@ -33,11 +33,15 @@
                         <router-link to="/music" :class="{active: currentRoute==='/music'}" class="nav-link">Music</router-link>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Calendar">Calendar</a>
+                        <router-link to="/calendar" :class="{active: currentRoute==='/calendar'}" class="nav-link">Calendar</router-link>
                     </li>
+                    <!--
+                        Perhaps add in the future!  
                     <li class="nav-item">
                         <a class="nav-link" href="Fun">Fun</a>
                     </li>
+                    -->
+                    
                 </ul>
             </div>
         </div>
