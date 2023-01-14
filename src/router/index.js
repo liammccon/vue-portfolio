@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 import AboutPage from '../views/AboutPage.vue'
 import CodingPage from '../views/CodingPage.vue'
+import MusicPage from '../views/MusicPage.vue'
 
 const routes = [
   {
@@ -13,6 +14,11 @@ const routes = [
     path: '/coding',
     name: 'coding',
     component: CodingPage
+  },
+  {
+    path: '/music',
+    name: 'music',
+    component: MusicPage
   }
 
 

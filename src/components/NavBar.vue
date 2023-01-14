@@ -30,7 +30,7 @@
                         <router-link to="/coding" :class="{active: currentRoute==='/coding'}" class="nav-link">Coding</router-link>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Music">Music</a>
+                        <router-link to="/music" :class="{active: currentRoute==='/music'}" class="nav-link">Music</router-link>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Calendar">Calendar</a>
