@@ -52,6 +52,9 @@
                     <a class="ltm-social-icon" href="https://www.linkedin.com/in/liam-mcconlogue-7978b21ba/" target="_blank">
                         <i class="fa-brands fa-linkedin"></i>
                     </a>
+                    <a class="ltm-social-icon" href="https://github.com/liammccon/" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
                     <a class="ltm-social-icon" href="https://www.youtube.com/channel/UCPKat5YvtIJ6vbCgLNObTVg" target="_blank">
                         <i class="fa-brands fa-youtube"></i>
                     </a>
@@ -63,11 +66,6 @@
                     </a>
 
                 </div>
-                <!--
-                    My logo
-                <img src="./../assets/liam-logo-small.svg" class="ltm-logo" alt="French horn logo"/>
-
-                -->
             </div>
         </div>
     </div>
@@ -112,7 +110,7 @@ export default {
 .ltm-gradient-down {
     margin-bottom: 0px;
     background-image: linear-gradient(to bottom, 
-        rgba(255,0,0,0), 
+        rgba(0,0,0,0), 
         rgba(0,0,0,.5), 
         rgba(0,0,0,.8));
 }
