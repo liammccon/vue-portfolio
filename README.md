@@ -1,8 +1,10 @@
 # vue-portfolio
 
-This is a personal portfolio website for Liam McConlogue. It was built in VueJs and is hosted on github pages.
+This is a personal portfolio website for Liam McConlogue, demonstrating responsive front-end development, modern UI/UX design, and logo design. It was built in VueJs (without a template) and is hosted with github pages.
 
-[View deployment here]()
+[View deployment here](https://liammccon.github.io/vue-portfolio/)
+
+The site was made with HTML, JavaScript, CSS, Vue, Bootstrap, and JQuery. It is still being updated so check back for new pages!
 
 ## Project setup
 ```
