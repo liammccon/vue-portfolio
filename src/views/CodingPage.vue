@@ -124,7 +124,7 @@ import DisplayHeading from '@/components/DisplayHeading.vue';
                 projects: [
                     {
                         title: 'This website - Portfolio', 
-                        description: 'A portfolio websote that demonstrates responsive front-end development, logo design, and UI/UX design.',
+                        description: 'A portfolio website that demonstrates responsive front-end development, logo design, and UI/UX design.',
                         skills: 'HTML, JavaScript, CSS, Vue, Bootstrap, JQuery',
                         img: require('@/assets/projects/portfolio.png'),
                         github: 'https://github.com/liammccon/vue-portfolio',
